@@ -22,10 +22,11 @@ Query Optimization
   5. Оптимизация - анализ через EXPLAIN ANALYZE
 
 🗂️ Структура репозитория
-
+<pre>
 my-coding-challenges-SQL/
-├── LeetCode
-│ ├── [easy/](LeetCode/🟢%Easy)
-│ ├── [medium/](LeetCode/🟡%Medium)
-│ └── [hard/](LeetCode/🔴%Hard)
-
+├── <a href="LeetCode/">LeetCode/</a>
+│   ├── <a href="LeetCode/Easy">🟢 Easy/</a>
+│   ├── <a href="LeetCode/Medium">🟡 Medium/</a> 
+│   └── <a href="LeetCode/Hard">🔴 Hard/</a>
+└── <a href="HackerRank/">HackerRank/</a>
+ </pre>
