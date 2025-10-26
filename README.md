@@ -31,3 +31,8 @@ my-coding-challenges-SQL/
 │   └── <a href="LeetCode/Hard">🔴 Hard/</a>
 └── <a href="HackerRank/">HackerRank/</a>
  </pre>
+
+
+- [🟢 Easy](LeetCode/%F0%9F%9F%A2%20Easy/) - Базовые SQL запросы
+- [🟡 Medium](LeetCode/%F0%9F%9F%A1%20Medium/) - Продвинутые конструкции  
+- [🔴 Hard](LeetCode/%F0%9F%94%B4%20Hard/) - Сложные алгоритмы
