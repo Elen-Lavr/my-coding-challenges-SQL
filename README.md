@@ -31,3 +31,12 @@ my-coding-challenges-SQL/
 │   └── <a href="LeetCode/%F0%9F%94%B4%20Hard">🔴 Hard/</a>
 └── <a href="HackerRank/">HackerRank/</a>
  </pre>
+
+<pre>
+my-coding-challenges-SQL/
+├── <a href="LeetCode/">LeetCode/</a>
+│   ├── <a href="LeetCode/%F0%9F%9F%A2%20Easy">&#x1F7E2; Easy/</a>
+│   ├── <a href="LeetCode/%F0%9F%9F%A1%20Medium">&#x1F7E1; Medium/</a> 
+│   └── <a href="LeetCode/%F0%9F%94%B4%20Hard">&#x1F534; Hard/</a>
+└── <a href="HackerRank/">HackerRank/</a>
+</pre>
