@@ -31,24 +31,3 @@ my-coding-challenges-SQL/
 │   └── <a href="LeetCode/%F0%9F%94%B4%20Hard">🔴 Hard/</a>
 └── <a href="HackerRank/">HackerRank/</a>
  </pre>
-
-🗂️ Структура репозитория
-<pre>
-my-coding-challenges-SQL/
-├── <a href="LeetCode/">LeetCode/</a>
-│   ├── <a href="LeetCode/%🟢%Easy">🟢 Easy/</a>
-│   ├── <a href="LeetCode/%F0%9F%9F%A1%20Medium">🟡 Medium/</a> 
-│   └── <a href="LeetCode/%F0%9F%94%B4%20Hard">🔴 Hard/</a>
-└── <a href="HackerRank/">HackerRank/</a>
-</pre>
-
-
-
-
-
-my-coding-challenges-SQL/
-├── [LeetCode/](LeetCode/)
-│   ├── [🟢 Easy Level](LeetCode/%🟢%Easy/)
-│   ├── [🟡 Medium Level](LeetCode/%🟡%Medium/)
-│   └── [🔴 Hard Level](LeetCode/%🔴%Hard/)
-└── [HackerRank/](HackerRank/)
