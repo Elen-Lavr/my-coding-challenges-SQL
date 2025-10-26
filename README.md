@@ -48,7 +48,7 @@ my-coding-challenges-SQL/
 
 my-coding-challenges-SQL/
 ├── [LeetCode/](LeetCode/)
-│   ├── [🟢 Easy Level](LeetCode/%F0%9F%9F%A2%20Easy/)
-│   ├── [🟡 Medium Level](LeetCode/%F0%9F%9F%A1%20Medium/)
-│   └── [🔴 Hard Level](LeetCode/%F0%9F%94%B4%20Hard/)
+│   ├── [🟢 Easy Level](LeetCode/%🟢%Easy/)
+│   ├── [🟡 Medium Level](LeetCode/%🟡%Medium/)
+│   └── [🔴 Hard Level](LeetCode/%🔴%Hard/)
 └── [HackerRank/](HackerRank/)
