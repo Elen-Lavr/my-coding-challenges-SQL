@@ -51,8 +51,6 @@ limit 5;
 ```
 Проверяем план запроса (EXPLAIN ANALYZE) [посмотреть результат](./1_explain_analyze.jpg)
 
-
-
 Оптимизируем сокращая колличество подзапросов
 ```sql
 with markers as (
@@ -81,9 +79,7 @@ group by template_name
 order by count(*) DESC
 limit 5;
 ```
-Проверяем план запроса (EXPLAIN ANALYZE)
-
-
+Проверяем план запроса (EXPLAIN ANALYZE) [посмотреть результат](./2_explain_analyze.jpg)
 
 Оконные функции очень тяжелые, поэтому оптимизируем с помощью индексов, которые запускаем сразу после создания таблицы, перед запросом
 ```sql
@@ -98,8 +94,7 @@ where event = 'template_selected';
 create index idx_logs_template_name on logs(value, user_id, event_time) 
 where event = 'template_selected';
 ```
-Запускаем план запроса (EXPLAIN ANALYZE) ещё раз. 
-
+Запускаем план запроса (EXPLAIN ANALYZE) ещё раз [посмотреть результат](./3_explain_analyze.jpg)
 
 Для удобства понимания задачи создаем тестовую базу данных, затем таблицу и делаем наполнение
 ```sql
