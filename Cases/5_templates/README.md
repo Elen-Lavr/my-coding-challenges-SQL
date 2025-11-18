@@ -50,7 +50,8 @@ order by count desc
 limit 5;
 ```
 Проверяем план запроса (EXPLAIN ANALYZE)
-![](.5_templates/1_explain analyze.jpg)
+
+![](/5_templates/1_explain_analyze.jpg)
 
 Оптимизируем сокращая колличество подзапросов
 ```sql
