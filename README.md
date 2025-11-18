@@ -8,13 +8,15 @@
 🛠 Навыки:
 ```sql
 -- Основные конструкции
-SELECT, JOIN, GROUP BY, HAVING, ORDER BY
+SELECT, JOIN, GROUP BY, HAVING, ORDER BY, CREATE INDEX, CREATE VIEW
 
 -- Продвинутые техники
 Window Functions (ROW_NUMBER, RANK, LAG/LEAD)
 Common Table Expressions (CTE)
 Recursive Queries
 Query Optimization
+EXPLAIN ANALYZE
+Условные индексы
 ```
 💡 Методология решения
 ```sql
@@ -27,6 +29,7 @@ Query Optimization
 🗂️ Структура репозитория
 <pre>
 my-coding-challenges-SQL/
+├── <a href='Тестовые задания'/</a>
 ├── <a href="LeetCode/">LeetCode/</a>
 │   ├── 🟢 Easy/
 │   ├── 🟡 Medium/
