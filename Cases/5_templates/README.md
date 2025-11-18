@@ -49,7 +49,10 @@ from cons_templates
 order by count desc
 limit 5;
 ```
-Проверяем план запроса (EXPLAIN ANALYZE) [Посмотреть результат](/5_templates/1_explain_analyze.jpg)
+Проверяем план запроса (EXPLAIN ANALYZE) [Посмотреть результат](./Cases/5_templates/1_explain_analyze.jpg)
+[Посмотреть результат](./1_explain_analyze.jpg)
+[Посмотреть результат](5_templates/1_explain_analyze.jpg)
+
 
 Оптимизируем сокращая колличество подзапросов
 ```sql
