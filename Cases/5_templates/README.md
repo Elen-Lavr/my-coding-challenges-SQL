@@ -56,7 +56,7 @@ limit 5;
 
 Оптимизируем сокращая колличество подзапросов
 ```sql
-with markers as ( -- hазбиваем события на сессии (разрыв > 5 минут = новая сессия)
+with markers as ( -- разбиваем события на сессии (разрыв > 5 минут = новая сессия)
 	select user_id, event_time, value as template_name,
 		case when extract(epoch from (event_time - lag(event_time) over (partition by user_id order by event_time))) > 300
         	or lag(event_time) over (partition by user_id order by event_time) is null
