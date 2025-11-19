@@ -22,7 +22,7 @@
 
 Согласно описанной выше логике пишем запрос:
 ```sql
-with markers as (
+with markers as ( 
 	select user_id, event_time, value as template_name,
 		case when extract(epoch from (event_time - lag(event_time) over (partition by user_id order by event_time))) > 300
         	or lag(event_time) over (partition by user_id order by event_time) is null
@@ -30,7 +30,7 @@ with markers as (
 	from logs
 	where event = 'template_selected'
 ),
-	sessions as (
+	sessions as ( 
 	select user_id, event_time, template_name,
     sum(new_session) over (partition by user_id order by event_time) as session_id
 	from markers
@@ -56,7 +56,7 @@ limit 5;
 
 Оптимизируем сокращая колличество подзапросов
 ```sql
-with markers as (
+with markers as ( -- hазбиваем события на сессии (разрыв > 5 минут = новая сессия)
 	select user_id, event_time, value as template_name,
 		case when extract(epoch from (event_time - lag(event_time) over (partition by user_id order by event_time))) > 300
         	or lag(event_time) over (partition by user_id order by event_time) is null
@@ -64,12 +64,12 @@ with markers as (
 	from logs
 	where event = 'template_selected'
 ),
-	sessions as (
+	sessions as ( -- нумеруем сессии для каждого пользователя
 	select user_id, event_time, template_name,
     sum(new_session) over (partition by user_id order by event_time) as session_id
 	from markers
 ),
-cons_events AS (
+cons_events as ( -- ищем последовательные одинаковые шаблоны
 	select user_id, session_id, template_name,
 	    case when template_name = lag(template_name) over (partition by user_id, session_id order by event_time)
 	    	then 1 else 0 end as is_consecutive
