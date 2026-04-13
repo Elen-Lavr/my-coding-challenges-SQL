@@ -29,7 +29,6 @@ EXPLAIN ANALYZE
 🗂️ Структура репозитория
 <pre>
 my-coding-challenges-SQL/
-├── <a href='Cases'/>Cases</a>
 ├── <a href="LeetCode/">LeetCode/</a>
 │   ├── 🟢 Easy/
 │   ├── 🟡 Medium/
